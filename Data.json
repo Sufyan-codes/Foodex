@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "price": "24.5",
+        "img": "assets/img/plate1.png",
+        "class": "italian",
+        "time": "20-30",
+        "rating": "4.9",
+        "reviewBy": "John Doe",
+        "review": "I had the Margherita Pizza, and it was amazing! The crust was perfectly crispy, and the flavors were on point. Great Italian food!"
+    },
+    {
+        "id": 2,
+        "name": "Sushi",
+        "price": "34.5",
+        "img": "assets/img/plate2.png",
+        "class": "japanes",
+        "time": "15-25",
+        "rating": "4.5",
+        "reviewBy": "Sushi Lover",
+        "review": "The sushi here is really good. I tried the California Roll, and it was fresh and delicious. Quick service too!"
+    },
+    {
+        "id": 3,
+        "name": "Cheese",
+        "price": "14.95",
+        "img": "assets/img/plate3.png",
+        "class": "American",
+        "time": "20-30",
+        "rating": "4.3",
+        "reviewBy": "Chees Doe",
+        "review": "The Classic Cheeseburger was juicy and satisfying. A great spot for some American comfort food."
+    },
+    {
+        "id": 4,
+        "name": "Chicken",
+        "price": "44.5",
+        "img": "assets/img/plate3.png",
+        "class": "Mexican",
+        "time": "20-30",
+        "rating": "4.9",
+        "reviewBy": "John Doe",
+        "review": "I love the spicy options here. The Chicken Enchiladas were fantastic, and the spiciness was just right!"
+    },
+    {
+        "id": 5,
+        "name": "Margherita",
+        "price": "24.5",
+        "img": "assets/img/plate1.png",
+        "class": "italian",
+        "time": "20-30",
+        "rating": "4.4",
+        "reviewBy": "John Doe",
+        "review": "I had the Margherita Pizza, and it was amazing! The crust was perfectly crispy, and the flavors were on point. Great Italian food!"
+    },
+    {
+        "id": 6,
+        "name": "Pizza",
+        "price": "54.5",
+        "img": "assets/img/plate2.png",
+        "class": "vegan",
+        "time": "20-30",
+        "rating": "4.9",
+        "reviewBy": "John Doe",
+        "review": "I had the Margherita Pizza, and it was amazing! The crust was perfectly crispy, and the flavors were on point. Great Italian food!,"
+    }
+]
