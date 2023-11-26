@@ -492,22 +492,24 @@ a.button {
 .card__wraper img{
     width: 130px;
     margin: 0 auto;
+    margin-bottom: var(--mb-3);
 }
 
-.type {
-    background-color: #6a5acd;
+
+.class {
+    background-color: #908cb3;
     color: white;
     text-transform: capitalize;
-    width: 60px;
+    padding: .1rem .6rem;
     margin-top: var(--mb-1);
-    display: none;
+    text-align: left;
 }
 
 
 .name {
     color: #393939;
     font-size: 1rem;
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-1);
 }
 
 .rate {
@@ -518,7 +520,6 @@ a.button {
 .price {
     font-size: .9rem;
     color: #6a5acd;
-    margin-top: 10rem;
     margin-bottom: var(--mb-1);
 }
 
@@ -678,4 +679,52 @@ a.button {
     font-size: .7rem;
   }
 
-  
+  /* testimonials */
+.testimonial {
+    background: white;
+    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .05);
+    border-radius: .5rem;
+    padding: 1.5rem 1.5rem;
+}
+
+  .testimonial__title {
+    color: #242424;
+  }
+
+  .testimonial__head {
+    display: flex;
+    gap: 1rem;
+  }
+  .testimonial__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .testimonial__intro h2 {
+    color: #242424;
+    font-size: .7rem;
+    margin-bottom: var(--mb-1);
+  }
+
+  .testimonial__intro p {
+    font-size: .6rem;
+    
+  }
+
+  .testimonial__data p {
+    font-size: .8rem;
+    margin-top: var(--mb-1);
+    line-height: 1.5rem;
+  }
+
+  .testimonial__data span {
+    display: block;
+    margin-top: var(--mb-1);
+    font-size: .8rem;
+  }
+
+  .testimonial__grid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
