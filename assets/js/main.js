@@ -16,11 +16,13 @@ const addDataToHTML = () => {
         
         
         <img class="menu__img" src="${product.img}" alt="">
-        <span class="type">${product.type}</span>
+        <span class="class">${product.class}</span>
         <h3 class="name">${product.name}</h3>
+        <span class="rate">${product.time}mins <i class="ri-star-fill"></i>${product.rating}</span>
+        <div class="price-container">
         <h2 class="price">$${product.price}</h2>
-        <span class="rate"><i class="ri-star-fill"></i>${product.rating}</span>
-        <button class="addCart">Add to cart</button>
+        <button class="addCart"><i class="ri-shopping-bag-line"></i></button>
+        </div>
         `;
 
         listProductsHTML.appendChild(newProduct)
