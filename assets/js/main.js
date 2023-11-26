@@ -19,10 +19,8 @@ const addDataToHTML = () => {
         <span class="class">${product.class}</span>
         <h3 class="name">${product.name}</h3>
         <span class="rate">${product.time}mins <i class="ri-star-fill"></i>${product.rating}</span>
-        <div class="price-container">
         <h2 class="price">$${product.price}</h2>
-        <button class="addCart"><i class="ri-shopping-bag-line"></i></button>
-        </div>
+        <button class="addCart">i<i class="ri-shopping-bag-line carts"></i></button>
         `;
 
         listProductsHTML.appendChild(newProduct)

@@ -518,23 +518,27 @@ a.button {
 .price {
     font-size: .9rem;
     color: #6a5acd;
-    margin-top: var(--mb-1);
+    margin-top: 10rem;
     margin-bottom: var(--mb-1);
 }
 
 
 .addCart {
-    margin-top: var(--mb-2);
+    position: relative;
     font-weight: 700;
-    color: #6a5acd;
-    font-size: 1.2rem;
+    color: transparent;
+    font-size: 0.1rem;
+    border: 2px solid #6a5acd;
+    border-radius: .3rem;
 }
 
-.addCart:hover {
-    background-color: #6a5acd;
-    color: white;
-    transition: .4s;
+.carts {
+    color: #6a5acd;
+    font-size: 1.2rem;
+    
 }
+
+
 
 .price-container {
     display: flex;
