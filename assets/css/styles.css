@@ -476,7 +476,14 @@ a.button {
     font-weight: 700;
 }
 
-
+.shop{
+ display: block;
+ width: 150px;
+ margin: 0 auto;
+ color: white;
+  background:;
+  text-align: center;
+}
   /* ABOUT  */
   .about__container {
     display: flex;
