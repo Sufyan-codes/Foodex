@@ -80,6 +80,9 @@ const newsWrap = new Swiper('.news__wrap', {
         300: {
             slidesPerView: 1
         },
+        576: {
+            slidesPerView: 2
+        },
         700: {
             slidesPerView: 3
         },

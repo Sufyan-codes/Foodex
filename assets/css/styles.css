@@ -864,3 +864,22 @@ a.button {
   color: var(--text-color-light);
   margin-top: 3.5rem;
 }
+/* MEDIA QUERY */
+.menu__grid{
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .menu__grid{
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 960px) {
+
+}
