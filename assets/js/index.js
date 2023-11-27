@@ -61,7 +61,7 @@ const swiperWatches = new Swiper('.home__swiper', {
 })
 
 // rated swiper
-const topContainer = new Swiper('.top__container', {
+const newsWrap = new Swiper('.news__wrap', {
     loop: true,
     spaceBetween: 24,
    

@@ -84,6 +84,7 @@ body {
     /* for dark mode animation */
 }
 
+
 h1,h2,h3,p,ul{
     margin: 0;
   }
@@ -125,7 +126,6 @@ button {
     display: grid;
     gap: 1.5rem;
   }
-  
   .l-header{
     width: 100%;
     position: fixed;
@@ -476,141 +476,7 @@ a.button {
     font-weight: 700;
 }
 
-.card__wraper {
-    position: relative;
-    width: 18rem;
-    height: 22rem;
-    padding: 1rem 2rem;
-    border-radius: .5rem;
-    background: white;
-    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.card__wraper img{
-    width: 130px;
-    margin: 0 auto;
-    margin-bottom: var(--mb-3);
-}
-
-
-.class {
-    background-color: #908cb3;
-    color: white;
-    text-transform: capitalize;
-    padding: .1rem .6rem;
-    margin-top: var(--mb-1);
-    text-align: left;
-}
-
-
-.name {
-    color: #393939;
-    font-size: 1rem;
-    margin-top: var(--mb-1);
-}
-
-.rate {
-    font-size: .6rem;
-    text-align: left;
-}
-
-.price {
-    font-size: .9rem;
-    color: #6a5acd;
-    margin-bottom: var(--mb-1);
-}
-
-
-.addCart {
-    position: relative;
-    font-weight: 700;
-    color: transparent;
-    font-size: 0.1rem;
-    border: 2px solid #6a5acd;
-    border-radius: .3rem;
-}
-
-.carts {
-    color: #6a5acd;
-    font-size: 1.2rem;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-
-.price-container {
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
-}
-
-.price {
-    margin-top: 1.3rem;
-}
-
-  .most__head {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .header--title {
-    flex: 2;
-  }
-  /* Swiper class */
-  .swiper__pagination {
-    position: relative;
-    width: 5rem;
-    flex: 1;
-  }
-
-  
-
-   .swiper__pagination .swiper-button-prev::after,
-  .swiper__pagination .swiper-button-next::after{
-    content: '';
-  }
-  
-  
-  .swiper__pagination .swiper-button-prev,
-  .swiper__pagination .swiper-button-next{
-    width: initial;
-    height: initial;
-    margin: initial;
-    font-size: 2.5rem;
-    color: var(--title-color);
-  }
-  
-  .swiper__pagination .swiper-button-prev {
-    left: 0;
-    top: 4.5rem;
-  }
-  
-  .swiper__pagination .swiper-button-next {
-    right: 0;
-    top: 4.5rem;
-  }
-  
-  .swiper__pagination .swiper-slide {
-    margin-bottom: 4.5rem;
-  }
-  
-  .swiper__pagination .swiper-pagination-bullets {
-    bottom: 0;
-  }
-  
-  .swiper__pagination .swiper-pagination-bullet {
-    border-color: var(--text-color-light);
-    opacity: initial;
-  }
-  
-  .swiper__pagination .swiper-pagination-active {
-    border-color: var(--title-color);
-  }
-    
   /* ABOUT  */
   .about__container {
     display: flex;
@@ -726,5 +592,226 @@ a.button {
 
   .testimonial__grid {
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
   }
+
+  /* DEALS */
+  .deals__wrapper {
+    background: linear-gradient(rgba(0, 0, 0 ,0.527),rgba(0, 0, 0, 0.5)), url('/assets/img/home-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    height: 80%;
+  }
+
+  .deals__data {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+  }
+
+  .deals__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+  }
+
+  .detals__text {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    margin-bottom: var(--mb-2);
+  }
+
+  .button__deals {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+  }
+
+.reserve__left {
+  width: 120px;
+  height: 40px;
+  background: #6a5acd;
+  border-radius: .3rem;
+  text-transform: capitalize;
+}
+
+.reserve__left:hover {
+  border: 2px solid white;
+  background: none;
+  transition: .4s;
+}
+.reserve__right {
+  width: 120px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: .3rem;
+  text-transform: capitalize;
+}
+
+.reserve__right:hover {
+  background: #6a5acd;
+  border: none;
+  transition: .4s;
+}
+
+/* news */
+
+.card__wraper {
+  position: relative;
+  width: 21rem;
+  height: 21rem;
+  border-radius: .5rem;
+  background: white;
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, .05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__image {
+  background: url('/assets/img/home-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 190px;
+  color: transparent;
+}
+
+.card__text {
+  padding: 1rem;
+}
+
+.time {
+  font-size: .7rem;
+}
+
+.card__title {
+  color: #242424;
+  margin-top: var(--mb-1);
+}
+
+.cart__t {
+  margin-top: var(--mb-1);
+  margin-bottom: var(--mb-1);
+}
+
+.read__more {
+  color: #6a5acd;
+  text-decoration: underline;
+}
+.class {
+  background-color: #908cb3;
+  color: white;
+  text-transform: capitalize;
+  padding: .1rem .6rem;
+  margin-top: var(--mb-1);
+  text-align: left;
+}
+
+
+.name {
+  color: #393939;
+  font-size: 1rem;
+  margin-top: var(--mb-1);
+}
+
+.rate {
+  font-size: .6rem;
+  text-align: left;
+}
+
+.price {
+  font-size: .9rem;
+  color: #6a5acd;
+  margin-bottom: var(--mb-1);
+}
+
+
+.addCart {
+  position: relative;
+  font-weight: 700;
+  color: transparent;
+  font-size: 0.1rem;
+  border: 2px solid #6a5acd;
+  border-radius: .3rem;
+}
+
+.carts {
+  color: #6a5acd;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.price {
+  margin-top: 1.3rem;
+}
+
+.most__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--title {
+  flex: 2;
+}
+/* Swiper class */
+.swiper__pagination {
+  position: relative;
+  width: 5rem;
+  flex: 1;
+}
+
+
+
+ .swiper__pagination .swiper-button-prev::after,
+.swiper__pagination .swiper-button-next::after{
+  content: '';
+}
+
+
+.swiper__pagination .swiper-button-prev,
+.swiper__pagination .swiper-button-next{
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.swiper__pagination .swiper-button-prev {
+  left: 0;
+  top: 4.5rem;
+}
+
+.swiper__pagination .swiper-button-next {
+  right: 0;
+  top: 4.5rem;
+}
+
+.swiper__pagination .swiper-slide {
+  margin-bottom: 4.5rem;
+}
+
+.swiper__pagination .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.swiper__pagination .swiper-pagination-bullet {
+  border-color: var(--text-color-light);
+  opacity: initial;
+}
+
+.swiper__pagination .swiper-pagination-active {
+  border-color: var(--title-color);
+}
+  

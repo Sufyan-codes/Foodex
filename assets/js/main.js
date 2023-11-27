@@ -1,20 +1,19 @@
 let listProductsHTML = document.querySelector('.menu')
 let listCartHTML = document.querySelector('.cart-items')
 let iconCartHTML = document.querySelector('.cart-count')
+let cardSwiper = document.querySelector('.swiper-wrapper')
 
 let listProducts = []
 let carts = []
 
 const addDataToHTML = () => {
-    listProductsHTML.innerHTML ='';
-    if(listProducts.length > 0) {
-    listProducts.forEach(product => {
-        let newProduct = document.createElement('div');
-        newProduct.classList.add('item');
-        newProduct.dataset.id = product.id;
-        newProduct.innerHTML = `
-        
-        
+    listProductsHTML.innerHTML = '';
+    if (listProducts.length > 0) {
+        listProducts.forEach(product => {
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
+            newProduct.dataset.id = product.id;
+            newProduct.innerHTML = `
         <img class="menu__img" src="${product.img}" alt="">
         <span class="class">${product.class}</span>
         <h3 class="name">${product.name}</h3>
@@ -23,27 +22,28 @@ const addDataToHTML = () => {
         <button class="addCart">i<i class="ri-shopping-bag-line carts"></i>i</button>
         `;
 
-        listProductsHTML.appendChild(newProduct)
+            listProductsHTML.appendChild(newProduct)
         })
     }
 }
-
-listProductsHTML.addEventListener('click', (event)=> {
+listProductsHTML.addEventListener('click', (event) => {
     let positionClick = event.target
-    if(positionClick.classList.contains('addCart')) {
+    if (positionClick.classList.contains('addCart')) {
         let product_id = positionClick.parentElement.dataset.id;
         addToCart(product_id)
     }
 })
 
+
+
 const addToCart = (product_id) => {
     let positionThisProductInCart = carts.findIndex((Value) => Value.product_id == product_id)
-    if(carts.length <= 0) {
+    if (carts.length <= 0) {
         carts = [{
             product_id: product_id,
             quantity: 1
         }]
-    }else if(positionThisProductInCart < 0){
+    } else if (positionThisProductInCart < 0) {
         carts.push({
             product_id: product_id,
             quantity: 1
@@ -54,23 +54,23 @@ const addToCart = (product_id) => {
     addToCartHTML()
 }
 
-const addToCartHTML =()=> {
+const addToCartHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
-    if(carts.length > 0) {
+    if (carts.length > 0) {
         carts.forEach(cart => {
             totalQuantity = totalQuantity + cart.quantity;
             let newCart = document.createElement('div')
             newCart.classList.add('items')
             newCart.dataset.id = cart.product_id
-            let positionProduct = listProducts.findIndex((value)=> value.id == cart.product_id);
+            let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
             let info = listProducts[positionProduct]
             newCart.innerHTML = `
             <div class="cart-data">
             <img src="${info.img}">
             <div class="cart__data">
                 <p>${info.name}</p>
-            <span>$${info.price*cart.quantity}</span>
+            <span>$${info.price * cart.quantity}</span>
             </div>
             <div class="counter">
                 <button class="add">+</button>
@@ -85,19 +85,19 @@ const addToCartHTML =()=> {
     iconCartHTML.innerText = totalQuantity;
 }
 
-listCartHTML.addEventListener('click', (event)=> {
+listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
-    if(positionClick.classList.contains('add') || positionClick.classList.contains('sub')) {
+    if (positionClick.classList.contains('add') || positionClick.classList.contains('sub')) {
         let product_id = positionClick.parentElement.dataset.id
         let type = 'sub'
-        if(positionClick.classList.contains('add')) {
+        if (positionClick.classList.contains('add')) {
             type = 'sub'
         }
         changeQuantity(product_id, type)
     }
 })
 
-const changeQuantity = (product_id, type)=> {
+const changeQuantity = (product_id, type) => {
     let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
     if (positionItemInCart >= 0) {
         let info = carts[positionItemInCart];
