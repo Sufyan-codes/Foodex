@@ -25,6 +25,7 @@ const addDataToHTML = () => {
             listProductsHTML.appendChild(newProduct)
         })
     }
+    
 }
 listProductsHTML.addEventListener('click', (event) => {
     let positionClick = event.target

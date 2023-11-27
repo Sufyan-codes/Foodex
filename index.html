@@ -37,26 +37,33 @@
                 <ul class="nav__list">
 
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            Shop now
+                        <a href="#home" class="nav__link">
+                            Home
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            Our value
+                        <a href="#menu" class="nav__link">
+                            Menu
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
+                        <a href="#about" class="nav__link">
                             About us
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            Locate us
+                        <a href="#reservtaion" class="nav__link">
+                            Reservation
+                        </a>
+                    </li>
+
+                    
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">
+                            Blog
                         </a>
                     </li>
 
@@ -102,7 +109,7 @@
 
     <main class="l-main">
         <!-- ==================HOME======================-->
-        <section class="home__images section bd-container">
+        <section class="home__images section bd-container" id="home">
 
 
 
@@ -194,7 +201,7 @@
         </section>
 
         <!-- ==================MENU======================-->
-        <section class="menu__section container section">
+        <section class="menu__section container section" id="menu">
 
             <div class="menu__container bd-container">
 
@@ -219,7 +226,7 @@
 
         <!-- ==================ABOUT======================-->
 
-        <section class="about container section">
+        <section class="about container section" id="about">
 
             <div class="about__container bd-container">
 
@@ -248,7 +255,7 @@
 
 
         <!-- ==================TESTIMONIALS======================-->
-        <section class="testimonials container bd-container section">
+        <section class="testimonials container bd-container section" >
 
             <div class="testimonials__card bd-grid">
                 <h1 class="testimonial__title">
@@ -401,7 +408,7 @@
         <!-- ==================DEALS======================-->
         <section class="deals__container">
 
-            <div class="deals__wrapper bd-container">
+            <div class="deals__wrapper ">
 
                 <div class="deals__data">
                     <h1 class="deals__title">
@@ -425,7 +432,7 @@
         </section>
 
         <!-- ==================LATEST NEWS======================-->
-        <section class="news__container section bd-container">
+        <section class="news__container section bd-container" id="blog">
 
             <div class="news__wrapper">
 
@@ -557,7 +564,52 @@
 
     <!-- ==================FOOTER======================-->
 
+   <!--========== FOOTER ==========-->
+   <footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+        <div class="footer__content">
+            <a href="#" class="footer__logo"><div class="nav__logo">m</div></a>
+            
+            <div>
+                <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
 
+        <div class="footer__content">
+            <h3 class="footer__title">Services</h3>
+            <ul>
+                <li><a href="#" class="footer__link">Delivery</a></li>
+                <li><a href="#" class="footer__link">Pricing</a></li>
+                <li><a href="#" class="footer__link">Fast food</a></li>
+                <li><a href="#" class="footer__link">Reserve your spot</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Information</h3>
+            <ul>
+                <li><a href="#" class="footer__link">Event</a></li>
+                <li><a href="#" class="footer__link">Contact us</a></li>
+                <li><a href="#" class="footer__link">Privacy policy</a></li>
+                <li><a href="#" class="footer__link">Terms of services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Adress</h3>
+            <ul>
+                <li>Lima - Peru</li>
+                <li>Jr Union #999</li>
+                <li>999 - 888 - 777</li>
+                <li>tastyfood@email.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="footer__copy">&#169; 2023 <a href="sufyandev.netlify.app">SufyanDev</a>. All right reserved</p>
+</footer>
 
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="/assets/js/index.js" type="module"></script>
