@@ -63,7 +63,7 @@ const swiperWatches = new Swiper('.home__swiper', {
 // rated swiper
 const newsWrap = new Swiper('.news__wrap', {
     loop: true,
-    spaceBetween: 24,
+    spaceBetween: 34,
    
     navigation: {
         nextEl: ".swiper-button-next",
