@@ -95,10 +95,10 @@ const newsWrap = new Swiper('.news__wrap', {
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
-    origin: 'bottom',
+    origin: 'top',
     distance: '30px',
     duration: 2000,
-    reset: true
+    reset: false
 });
 
 sr.reveal(`.home__data, .home__swiper,
