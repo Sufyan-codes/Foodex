@@ -92,3 +92,20 @@ const newsWrap = new Swiper('.news__wrap', {
         }
     },
 })
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home__data, .home__swiper,
+            .menu__title, .menu__bg,
+            .about__img, .about__title,
+            .testimonial__title, .news__wrap,
+            .deals__data, .news__title,
+            .footer__content`, {
+    interval: 200
+})
