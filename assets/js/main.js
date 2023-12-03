@@ -17,7 +17,7 @@ const addDataToHTML = () => {
         <img class="menu__img" src="${product.img}" alt="">
         <span class="class">${product.class}</span>
         <h3 class="name">${product.name}</h3>
-        <span class="rate">${product.time}mins <i class="ri-star-fill"></i>${product.rating}</span>
+        <span class="rate">${product.time}mins  <i class="ri-star-fill star"></i>${product.rating}</span>
         <h2 class="price">$${product.price}</h2>
         <button class="addCart">i<i class="ri-shopping-bag-line carts"></i>i</button>
         `;

@@ -88,7 +88,7 @@ const newsWrap = new Swiper('.news__wrap', {
         },
         // 1200px and up shoes 3 slides
         1000: {
-            slidesPerView: 4
+            slidesPerView: 3
         }
     },
 })
