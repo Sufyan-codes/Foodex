@@ -54,6 +54,9 @@ const swiperWatches = new Swiper('.home__swiper', {
             opacity: 0
         },
     },
+    autoplay: {
+        delay: 3000,
+      },
 
     pagination: {
         el: '.swiper-pagination'
@@ -91,6 +94,9 @@ const newsWrap = new Swiper('.news__wrap', {
             slidesPerView: 3
         }
     },
+    autoplay: {
+        delay: 5000,
+      },
 })
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/

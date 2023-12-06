@@ -446,7 +446,7 @@ a.button {
 .home__swiper {
 
   text-align: center;
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-6);
 }
 
 .section__title {
@@ -662,7 +662,11 @@ align-self: center;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  color: white;
+}
 
+.button__deals a {
+  color: white;
 }
 
 .reserve__left {
