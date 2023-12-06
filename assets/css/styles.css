@@ -519,7 +519,9 @@ a.button {
 
 .about__link {
 display: block;
-width: 150px;
+width: 180px;
+align-self: center;
+
   padding: .7rem 2rem;
   border: 2px solid #6a5acd;
   color: #6a5acd;
