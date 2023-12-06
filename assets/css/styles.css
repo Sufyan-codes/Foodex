@@ -767,15 +767,6 @@ align-self: center;
   text-decoration: underline;
 }
 
-.class {
-  background-color: #908cb3;
-  color: white;
-  text-transform: capitalize;
-  padding: .1rem .6rem;
-  margin-top: var(--mb-1);
-  text-align: left;
-}
-
 
 .name {
   color: #393939;
@@ -785,7 +776,6 @@ align-self: center;
 
 .rate {
   font-size: .6rem;
-  text-align: left;
 }
 
 .price {
@@ -804,29 +794,6 @@ align-self: center;
   border-radius: .3rem;
 }
 
-.carts {
-  color: #6a5acd;
-  font-size: 1.2rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-
-
-.price-container {
-  display: flex;
-  justify-content: space-between;
-  place-items: center;
-}
-
-.price {
-  margin-top: 1.3rem;
-}
-
-.most__head {
-  display: flex;
-  justify-content: space-between;
-}
 
 .header--title {
   flex: 2;

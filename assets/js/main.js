@@ -15,7 +15,6 @@ const addDataToHTML = () => {
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
         <img class="menu__img" src="${product.img}" alt="">
-         
         <h3 class="name">${product.name}</h3>
         <span class="rate">${product.time}mins </span> <br>
         <span class="rate"><i class="ri-star-fill star"></i> <i class="ri-star-fill star"></i> <i class="ri-star-fill star"></i> <i class="ri-star-fill star"></i>${product.rating}</span>
