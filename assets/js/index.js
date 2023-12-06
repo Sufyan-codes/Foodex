@@ -4,7 +4,7 @@ const navClose = document.getElementById('nav-close')
 const navToggle = document.getElementById('nav-toggle')
 const cartIcon = document.getElementById('cart-icon')
 const cartContainer = document.getElementById('cart-container')
-const navCloseEl = document.getElementById('navClose')
+const navCloseEl = document.getElementById('navCloseCart')
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -24,15 +24,15 @@ if (navClose) {
 
     })
 
-    if (navCloseEl) {
-        navCloseEl.addEventListener('click', () => {
-            cartContainer.classList.remove('show__cart')
-        })
-    }
+  
 }
 
 
-
+if (navCloseEl) {
+    navCloseEl.addEventListener('click', () => {
+        cartContainer.classList.remove('show__cart')
+    })
+}
 
 
 
@@ -106,6 +106,6 @@ sr.reveal(`.home__data, .home__swiper,
             .about__data, .about__img,
             .testimonial__title, .news__wrap,
             .deals__data, .news__title,
-            .footer__content`, {
+            .footer__content, .reservation__container`, {
     interval: 200
 })

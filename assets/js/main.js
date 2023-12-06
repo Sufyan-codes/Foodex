@@ -73,11 +73,7 @@ const addToCartHTML = () => {
                 <p>${info.name}</p>
             <span>$${info.price * cart.quantity}</span>
             </div>
-            <div class="counter">
-                <button class="add">+</button>
-                <span class="counter-data">${cart.quantity}</span>
-                <button class="sub">-</button>
-            </div>
+          
             </div>
             `
             listCartHTML.appendChild(newCart)
@@ -86,13 +82,21 @@ const addToCartHTML = () => {
     iconCartHTML.innerText = totalQuantity;
 }
 
+/*
+  // <div class="counter quantity">
+            //     <span class="add">+</span>
+            //     <span class="counter-data">${cart.quantity}</span>
+            //     <span class="sub">-</span>
+            // </div>
+*/ 
+
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
     if (positionClick.classList.contains('add') || positionClick.classList.contains('sub')) {
         let product_id = positionClick.parentElement.dataset.id
-        let type = 'sub'
+        let type = 'sub';
         if (positionClick.classList.contains('add')) {
-            type = 'sub'
+            type = 'add'
         }
         changeQuantity(product_id, type)
     }
