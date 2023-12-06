@@ -560,6 +560,8 @@ a.button {
   font-size: .7rem;
 }
 
+
+
 /* testimonials */
 .testimonial {
   background: white;
@@ -694,10 +696,13 @@ a.button {
   align-items: center;
 }
 
+.img__food {
+  width: 100%;
+  height: 190px;
+  position: absolute;
+  border-radius: .3rem;
+}
 .card__image {
-  background: url('/assets/img/home-1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 190px;
   flex: 1;
@@ -710,6 +715,7 @@ a.button {
 }
 
 .container__icon {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -788,7 +794,7 @@ a.button {
 .addCart {
   position: relative;
   font-weight: 700;
-  color: transparent;
+  color: #6a5acd;
   font-size: 0.1rem;
   border: 2px solid #6a5acd;
   border-radius: .3rem;
@@ -991,6 +997,28 @@ a.button {
 
   .menu__container {
     width: 100%;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 20rem;
+    padding: 1rem 2rem;
+    padding-bottom: 1rem;
+    border-radius: .5rem;
+    background: white;
+    margin: .5rem;
+    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .05);
+  }
+
+  .class {
+    width: 100px;
+  }
+  .item img {
+    width: 130px;
+    margin: 0 auto;
   }
   .about__title {
     font-size: 2rem;

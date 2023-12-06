@@ -15,11 +15,12 @@ const addDataToHTML = () => {
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
         <img class="menu__img" src="${product.img}" alt="">
-        <span class="class">${product.class}</span>
+         
         <h3 class="name">${product.name}</h3>
-        <span class="rate">${product.time}mins  <i class="ri-star-fill star"></i>${product.rating}</span>
+        <span class="rate">${product.time}mins </span> <br>
+        <span class="rate"><i class="ri-star-fill star"></i> <i class="ri-star-fill star"></i> <i class="ri-star-fill star"></i> <i class="ri-star-fill star"></i>${product.rating}</span>
         <h2 class="price">$${product.price}</h2>
-        <button class="addCart">i<i class="ri-shopping-bag-line carts"></i>i</button>
+        <button class="addCart">Cart +</button>
         `;
 
             listProductsHTML.appendChild(newProduct)
